@@ -590,24 +590,46 @@
     flex-shrink: 0;
   }
 
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
   .cta-btn {
-    display: inline-block;
-    padding: 1rem 3rem;
-    background: var(--charcoal);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem 2rem;
     color: var(--cream);
     text-decoration: none;
     font-size: 0.72rem;
     letter-spacing: 0.25em;
     text-transform: uppercase;
     border-radius: 2px;
-    margin-top: 1rem;
     transition: all 0.3s;
     cursor: pointer;
     border: none;
+    font-family: 'Jost', sans-serif;
   }
 
-  .cta-btn:hover {
+  .cta-btn-email {
+    background: var(--charcoal);
+  }
+
+  .cta-btn-email:hover {
     background: var(--dark-brown);
+    letter-spacing: 0.35em;
+  }
+
+  .cta-btn-phone {
+    background: var(--gold);
+  }
+
+  .cta-btn-phone:hover {
+    background: #a07d58;
     letter-spacing: 0.35em;
   }
 
@@ -722,7 +744,7 @@
         <div class="service-number">01</div>
         <div class="service-icon">💍</div>
         <div class="service-name">Traufeier</div>
-        <div class="service-desc">Ihre Liebesgeschichte ist einzigartig – und so soll auch Ihre Trauung sein. Ich gestalte eine Zeremonie, die wirklich von Ihnen erzählt: persönlich, warmherzig und unvergesslich. Konfessionslos oder spirituell – ganz nach Ihrem Wunsch.</div>
+        <div class="service-desc">Deine Liebesgeschichte ist einzigartig – und so soll auch Deine Trauung sein. Ich gestalte eine Zeremonie, die wirklich von Euch erzählt: persönlich, warmherzig und unvergesslich. Konfessionslos oder spirituell – ganz nach Eurem Wunsch.</div>
       </div>
       <div class="service-card">
         <div class="service-number">02</div>
@@ -753,7 +775,7 @@
         <div class="philosophy-pillars">
           <div class="pillar">
             <div class="pillar-title">Authentizität</div>
-            <div class="pillar-text">Keine Standardreden. Jede Feier wird individuell und persönlich vorbereitet – in einem vertrauensvollen Gespräch mit Ihnen.</div>
+            <div class="pillar-text">Keine Standardreden. Jede Feier wird individuell und persönlich vorbereitet – in einem vertrauensvollen Gespräch mit Dir.</div>
           </div>
           <div class="pillar">
             <div class="pillar-title">Empathie</div>
@@ -815,7 +837,7 @@
   <div class="container">
     <div class="reveal">
       <p class="section-label">Kontakt</p>
-      <h2 class="section-title">Lassen Sie uns<br><em>ins Gespräch kommen</em></h2>
+      <h2 class="section-title">Lass uns<br><em>ins Gespräch kommen</em></h2>
       <p class="contact-sub">Jede gute Feier beginnt mit einem ehrlichen Gespräch.</p>
       <div class="contact-box">
         <div class="contact-line">
@@ -830,7 +852,14 @@
           <div class="icon">📍</div>
           <span>Tobias Happel · Deutschlandweit tätig</span>
         </div>
-        <button class="cta-btn">Jetzt anfragen</button>
+        <div class="cta-buttons">
+          <a class="cta-btn cta-btn-email" href="mailto:tobias.happel1@gmx.de">
+            ✉ Per Email schreiben
+          </a>
+          <a class="cta-btn cta-btn-phone" href="tel:+4917647635917">
+            ☎ Direkt anrufen
+          </a>
+        </div>
       </div>
     </div>
   </div>
